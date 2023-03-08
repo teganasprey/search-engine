@@ -11,9 +11,13 @@ int read_sizes(int *linecounter, int *maxlength, char* docfile)
 		return -1;
 	}
 	char line[1000];
-	
+    int n = 0;
+	int length;
 	while (fgets(line,1000, file)!=NULL)
 	{
-		printf("%s", line);
+        if(*maxlength<strlen(&line[n]))
+			*maxlength= strlen(&line[n]);
+        n++;
 	}
 }
+

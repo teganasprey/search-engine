@@ -1,3 +1,7 @@
 ﻿  readinput.cpp
-C:\Users\tegan\source\repos\search_engine\readinput.cpp(19): warning C4715: 'read_sizes': not all control paths return a value
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(19,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(15,6): warning C4101: 'length': unreferenced local variable
+  searchengine.cpp
+  Generating Code...
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(22): warning C4715: 'read_sizes': not all control paths return a value
   search_engine.vcxproj -> C:\Users\tegan\source\repos\search_engine\x64\Debug\search_engine.exe

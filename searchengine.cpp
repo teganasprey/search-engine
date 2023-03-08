@@ -19,7 +19,10 @@ int main(int argc, char **argv)
     int k = atoi(argv[4]);
     if (read_sizes(&linecounter, &maxlength, argv[2]) == -1)
         return -1;
-  
+    Mymap* mymap = new Mymap(linecounter, maxlength);
+    cout << "Initialisation finished" << endl;
+    cout << "Linecounter: " << linecounter << endl << "Maxlength: " << maxlength << endl;
+    return 1;
     
 }
 
