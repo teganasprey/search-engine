@@ -1,4 +1,3 @@
 ﻿  readinput.cpp
-  searchengine.cpp
-  Generating Code...
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(19): warning C4715: 'read_sizes': not all control paths return a value
   search_engine.vcxproj -> C:\Users\tegan\source\repos\search_engine\x64\Debug\search_engine.exe
