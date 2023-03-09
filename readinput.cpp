@@ -1,6 +1,7 @@
 #include "readinput.h"
 #include <cstring>
 #include <array>
+#include "Map.h"
 
 using namespace std;
 int read_sizes(int *linecounter, int *maxlength, char* docfile)
@@ -35,8 +36,8 @@ int read_input(Mymap* mymap, char* docfile)
 	int currlength;
 	for (int i = 0; i < mymap->getsize(); i++)
 	{
-		getline(&line, &falsebuffer, file);
-		if (mymap - insert(line, i) == -1)
+		fgets(line, falsebuffer, file);
+		if (mymap -> insert(line, i) == -1)
 		{
 			cout << "Document does not meet requirements" << endl;
 			fclose(file);
