@@ -20,8 +20,10 @@ int main(int argc, char **argv)
     if (read_sizes(&linecounter, &maxlength, argv[2]) == -1)
         return -1;
     Mymap* mymap = new Mymap(linecounter, maxlength);
+    read_input(mymap, argv[2]);
     cout << "Initialisation finished" << endl;
     cout << "Linecounter: " << linecounter << endl << "Maxlength: " << maxlength << endl;
+    delete(mymap);
     return 1;
     
 }

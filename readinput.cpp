@@ -1,5 +1,6 @@
 #include "readinput.h"
 #include <cstring>
+#include <array>
 
 using namespace std;
 int read_sizes(int *linecounter, int *maxlength, char* docfile)
@@ -11,13 +12,24 @@ int read_sizes(int *linecounter, int *maxlength, char* docfile)
 		return -1;
 	}
 	char line[1000];
-    int n = 0;
-	int length;
+	*linecounter = 0;
 	while (fgets(line,1000, file)!=NULL)
 	{
-        if(*maxlength<strlen(&line[n]))
-			*maxlength= strlen(&line[n]);
-        n++;
+        if(*maxlength<(int)strlen(line))
+			*maxlength= (int)strlen(line);
+		(*linecounter)++;
 	}
+	if (*linecounter == 0 || *maxlength < 3)
+	{
+		cout << "Document does not meet requirements" << endl;
+		return -1;
+	}
+	return 1;
 }
+
+int read_input(Mymap* mymap, char* docfile)
+{
+
+}
+
 

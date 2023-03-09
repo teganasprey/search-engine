@@ -1,7 +1,17 @@
 ﻿  readinput.cpp
-C:\Users\tegan\source\repos\search_engine\readinput.cpp(19,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\tegan\source\repos\search_engine\readinput.cpp(15,6): warning C4101: 'length': unreferenced local variable
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,16): error C2065: 'Mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,23): error C2065: 'mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,30): error C2062: type 'char' unexpected
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(30,5): error C2374: 'read_input': redefinition; multiple initialization
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,5): message : see declaration of 'read_input'
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(30,16): error C2065: 'Mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(30,23): error C2065: 'mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(30,30): error C2062: type 'char' unexpected
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(31,1): error C2143: syntax error: missing ';' before '{'
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(31,1): error C2447: '{': missing function header (old-style formal list?)
   searchengine.cpp
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,16): error C2065: 'Mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,23): error C2065: 'mymap': undeclared identifier
+C:\Users\tegan\source\repos\search_engine\readinput.h(4,30): error C2062: type 'char' unexpected
+C:\Users\tegan\source\repos\search_engine\searchengine.cpp(23,5): error C2064: term does not evaluate to a function taking 2 arguments
   Generating Code...
-C:\Users\tegan\source\repos\search_engine\readinput.cpp(22): warning C4715: 'read_sizes': not all control paths return a value
-  search_engine.vcxproj -> C:\Users\tegan\source\repos\search_engine\x64\Debug\search_engine.exe
