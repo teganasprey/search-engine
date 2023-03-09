@@ -13,5 +13,5 @@ C:\Users\tegan\source\repos\search_engine\readinput.cpp(31,1): error C2447: '{':
 C:\Users\tegan\source\repos\search_engine\readinput.h(4,16): error C2065: 'Mymap': undeclared identifier
 C:\Users\tegan\source\repos\search_engine\readinput.h(4,23): error C2065: 'mymap': undeclared identifier
 C:\Users\tegan\source\repos\search_engine\readinput.h(4,30): error C2062: type 'char' unexpected
-C:\Users\tegan\source\repos\search_engine\searchengine.cpp(23,5): error C2064: term does not evaluate to a function taking 2 arguments
+C:\Users\tegan\source\repos\search_engine\searchengine.cpp(23,9): error C2064: term does not evaluate to a function taking 2 arguments
   Generating Code...

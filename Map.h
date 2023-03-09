@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
+#ifndef MAP_H
+#define MAP_H
 using namespace std;
 class Mymap
 {
@@ -11,4 +13,8 @@ class Mymap
 	public:
 		Mymap(int size, int buffersize);
 		~Mymap();
+		int insert(char* line, int i);
+		const int getsize() { return size; }
+		const int getbuffersize() { return buffersize; }
 };
+#endif

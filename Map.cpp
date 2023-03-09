@@ -14,3 +14,7 @@ Mymap::~Mymap()
 		free(documents);
 		free(lengths);
 	}
+int Mymap::insert(char* line, int i)
+{
+	return 1;
+}
