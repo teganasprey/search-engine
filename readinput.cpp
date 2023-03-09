@@ -44,7 +44,11 @@ int read_input(Mymap* mymap, char* docfile)
 			free(line);
 			return -1;
 		}
+		free(line);
+		line = NULL;
+		falsebuffer = 0;
 	}
+	fclose(file);
 }
 
 

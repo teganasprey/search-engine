@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <cstring>
 
 #ifndef MAP_H
 #define MAP_H

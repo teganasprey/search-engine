@@ -8,13 +8,17 @@ Mymap::Mymap(int size, int buffersize) :size(size), buffersize(buffersize)
 		documents[i] = (char*)malloc(buffersize*sizeof(char));
 }
 Mymap::~Mymap()
-	{
-		for (int i = 0; i < size; i++)
-			free(documents[i]);
-		free(documents);
-		free(lengths);
-	}
+{
+	for (int i = 0; i < size; i++)
+		free(documents[i]);
+	free(documents);
+	free(lengths);
+}
 int Mymap::insert(char* line, int i)
 {
+	int curr;
+	char *token;
+	token = strtok(line, "\t");
+	cout << token << endl;
 	return 1;
 }
