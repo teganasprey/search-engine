@@ -18,7 +18,22 @@ int Mymap::insert(char* line, int i)
 {
 	int curr;
 	char *token;
-	token = strtok(line, "\t");
-	cout << token << endl;
-	return 1;
+	token = strtok(line, " \t");
+	curr = atoi(token);
+	if (curr != i)
+	{
+		token = NULL;
+		free(token);
+		return -1;
+	}
+	token = strtok(NULL, " \n");
+	while (token[0] == ' ')
+		token++;
+	int end = 0;
+	while (token[end] != '\0')
+		end++;
+	end--;
+	while (end != 0 && token[end] == ' ')
+		token[end--] = '\0';
+	strcpy(documents[i], token);
 }

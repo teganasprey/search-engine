@@ -25,8 +25,13 @@ int main(int argc, char **argv)
         delete(mymap);
         return -1;
     }
+    
     cout << "Initialisation finished" << endl;
-    cout << "Linecounter: " << linecounter << endl << "Maxlength: " << maxlength << endl;
+    //cout << "Linecounter: " << linecounter << endl << "Maxlength: " << maxlength << endl;
+    for (int i = 0; i < mymap->getsize(); i++)
+    {
+        mymap->print(i);
+    }
     delete(mymap);
     return 1;
     
