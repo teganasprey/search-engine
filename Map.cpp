@@ -17,7 +17,7 @@ Mymap::~Mymap()
 int Mymap::insert(char* line, int i)
 {
 	int curr;
-	char* token;
+	char *token;
 	token = strtok(line, "\t");
 	cout << token << endl;
 	return 1;
