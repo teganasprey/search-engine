@@ -3,3 +3,4 @@
 #include <cstring>
 #include "readinput.h"
 #include "Map.h"
+#include "trienode.h"

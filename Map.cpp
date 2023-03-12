@@ -26,7 +26,7 @@ int Mymap::insert(char* line, int i)
 		free(token);
 		return -1;
 	}
-	token = strtok(NULL, " \n");
+	token = strtok(NULL, "\n");
 	while (token[0] == ' ')
 		token++;
 	int end = 0;

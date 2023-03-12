@@ -20,7 +20,8 @@ int main(int argc, char **argv)
     if (read_sizes(&linecounter, &maxlength, argv[2]) == -1)
         return -1;
     Mymap* mymap = new Mymap(linecounter, maxlength);
-    if (read_input(mymap, argv[2]) == -1)
+    Trienode* trie = new Trienode();
+    if (read_input(mymap, trie, argv[2]) == -1)
     {
         delete(mymap);
         return -1;
@@ -47,3 +48,4 @@ int main(int argc, char **argv)
 //   4. Use the Error List window to view errors
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+//watch 2:45

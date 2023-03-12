@@ -130,11 +130,13 @@
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="readinput.cpp" />
     <ClCompile Include="searchengine.cpp" />
+    <ClCompile Include="trienode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map.h" />
     <ClInclude Include="readinput.h" />
     <ClInclude Include="searchengine.h" />
+    <ClInclude Include="trienode.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="smalldataset.txt" />
