@@ -10,7 +10,7 @@ class Trienode
 {
 	Trienode* sibling;
 	Trienode* child;
-	//listnode
+	//listnode* list;
 	char value;
 	public:
 		Trienode();

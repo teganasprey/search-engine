@@ -28,7 +28,7 @@ int read_sizes(int *linecounter, int *maxlength, char* docfile)
 	return 1;
 }
 
-int read_input(Mymap* mymap, Trienode *trie, char* docfile)
+int read_input(Mymap* mymap, Trienode* trie, char* docfile)
 {
 	FILE* file = fopen(docfile, "r");
 	char line[1000];
@@ -39,7 +39,7 @@ int read_input(Mymap* mymap, Trienode *trie, char* docfile)
 	for (int i = 0; i < mymap->getsize(); i++)
 	{
 		fgets(line, falsebuffer, file);
-		if (mymap -> insert(line, i) == -1)
+		if (mymap->insert(line, i) == -1)
 		{
 			cout << "Document does not meet requirements" << endl;
 			fclose(file);
@@ -49,6 +49,7 @@ int read_input(Mymap* mymap, Trienode *trie, char* docfile)
 	}
 	fclose(file);
 	free(temp);
+	return 1;
 }
 
 

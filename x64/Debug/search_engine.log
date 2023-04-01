@@ -1,2 +1,6 @@
-﻿  trienode.cpp
+﻿  readinput.cpp
+C:\Users\tegan\source\repos\search_engine\readinput.cpp(36,6): warning C4101: 'currlength': unreferenced local variable
+  searchengine.cpp
+  trienode.cpp
+  Generating Code...
   search_engine.vcxproj -> C:\Users\tegan\source\repos\search_engine\x64\Debug\search_engine.exe
